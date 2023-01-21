@@ -1,0 +1,95 @@
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: rgb(61, 61, 61);
+    flex-direction: column;
+
+}
+
+.firstHamburgerContainer{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    background-color: #f3f3f3;
+    flex-direction: column;
+    margin: auto auto;
+    
+}
+
+.firstLine{
+    min-height: 13px;
+    min-width: 200px;
+    background-color: rgb(46, 43, 43);
+    border-radius:5px;
+    margin: 60px auto 0px auto;
+    transition: all ease-in 400ms ;
+}
+
+.openFirstLine{
+    min-height: 13px;
+    min-width: 200px;
+    background-color: rgb(46, 43, 43);
+    border-radius:5px;
+    margin: 60px auto 0px auto;
+    transform: translateY(2rem) rotate(45deg);
+    transition: all ease-in 400ms ;
+}
+
+.secondLine{
+    min-height: 13px;
+    min-width: 200px;
+    background-color: rgb(46, 43, 43);
+    border-radius:5px;
+    margin: 25px auto 0px auto;
+    transition: all ease-in 400ms ;
+    
+}
+
+.openSecondLine{
+    width: 0px;
+    height: 0px;
+    transition: all ease-in 400ms ;
+    animation: linecutter 400ms ;
+}
+@keyframes linecutter{
+    10%{
+        min-height: 13px;
+        min-width: 200px;
+       
+    }
+    20%{
+        min-height: 10px;
+        min-width: 185px;
+        
+    }
+    30%{
+        min-height: 7px;
+        min-width: 155px;
+        
+    }
+    40%{
+        min-height: 0px;
+        min-width: 0px;
+       
+    }
+}
+
+.thirdLine{
+    min-height: 13px;
+    min-width: 200px;
+    background-color: rgb(46, 43, 43);
+    border-radius:5px;
+    margin: 25px auto 0px auto;
+    transition: all ease-in 400ms ;
+}
+
+.openThirdLine{
+    min-height: 13px;
+    min-width: 200px;
+    background-color: rgb(46, 43, 43);
+    border-radius:5px;
+    margin: 60px auto 0px auto;
+    transform: translateY(-2.6rem) rotate(-45deg);
+    transition: all ease-in 400ms ;
+}
